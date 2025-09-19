@@ -311,5 +311,3 @@ exports.deleteProductImage = async (req, res) => {
         });
     }
 };
-  
-  
