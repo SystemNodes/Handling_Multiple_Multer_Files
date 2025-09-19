@@ -21,6 +21,6 @@ router.delete('/product/:id', deleteProduct);
 router.put('/product/:id/images', upload.array('images', 4), appendNewImages);
 router.put('/product/:id/images/:index', upload.single('images'), replaceProductImage);
 router.put('/product/:id/images/indexes', upload.array('images', 4), replaceMultipleImages);
-router.delete('/product/:id/images/:index', deleteProductImage)
+router.delete('/product/:id/images/:index', deleteProductImage);
 
 module.exports = router
